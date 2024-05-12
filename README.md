@@ -48,10 +48,14 @@ To get started with Adventure Platform Desktop, follow these steps:
 Once you have set up the project, you can run Adventure Platform Desktop by executing the [main Java class](https://github.com/mannai-omar/adventure-desktop/blob/main/src/main/java/test/Main.java). Follow the on-screen instructions to navigate the application and explore its features.
 
 ## Demos
-### Front-end
-![front-desktop](https://github.com/mannai-omar/adventure-desktop/assets/73422595/3406cd37-ffdd-403c-b314-0f25b25e1938)
-### Dashboard
-![dashboard-desktop](https://github.com/mannai-omar/adventure-desktop/assets/73422595/87473e55-51dd-43ec-82f1-43a49eae2dd5)
-### Login
-![login-desktop](https://github.com/mannai-omar/adventure-desktop/assets/73422595/1bc77cb5-5257-49c7-9ebc-20ba97379ff3)
+
+### Front-end Desktop
+<img src="https://github.com/mannai-omar/adventure-desktop/assets/73422595/3406cd37-ffdd-403c-b314-0f25b25e1938" alt="Front-end Demo" width="400" height="300">
+
+### Dashboard Desktop
+<img src="https://github.com/mannai-omar/adventure-desktop/assets/73422595/87473e55-51dd-43ec-82f1-43a49eae2dd5" alt="Dashboard Demo" width="400" height="300">
+
+### Login Desktop
+<img src="https://github.com/mannai-omar/adventure-desktop/assets/73422595/1bc77cb5-5257-49c7-9ebc-20ba97379ff3" alt="Login Demo" width="400" height="300">
+
 
