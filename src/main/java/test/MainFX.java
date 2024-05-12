@@ -29,7 +29,7 @@ public class MainFX extends Application {
             primaryStage.setScene(scene);
             primaryStage.setTitle("Adventure");
 
-            primaryStage.setResizable(false);
+            //primaryStage.setResizable(false);
 
             primaryStage.show();
         } catch (IOException e) {
