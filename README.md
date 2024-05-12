@@ -9,8 +9,7 @@ Welcome to the Adventure Platform Desktop repository! Adventure Platform Desktop
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [Demos](#demos)
 
 ## Introduction
 
