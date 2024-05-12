@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<FlowPane prefHeight="258.0" prefWidth="200.0" style="-fx-background-color: #f5f5f5; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ActivityCard">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="266.0" prefWidth="200.0" spacing="3.0">
+         <children>
+            <ImageView fx:id="image" fitHeight="131.0" fitWidth="200.0" pickOnBounds="true">
+               <image>
+                  <Image url="@assets/hiking.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="name" prefHeight="22.0" prefWidth="175.0" text="White Canop">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="31.0" prefWidth="300.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="17.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/location.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="locationn" text="location">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="31.0" prefWidth="300.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="17.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <clip>
+                        <Rectangle arcHeight="10" arcWidth="10" height="17.0" width="15.0" />
+                     </clip>
+                     <image>
+                        <Image url="@assets/currency.png" />
+                     </image>
+                  </ImageView>
+
+                  <Label fx:id="price" text="Price $93.65">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" />
+               </VBox.margin>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#showDetails" prefHeight="26.0" prefWidth="170.0" style="-fx-background-color: #1D231F; -fx-background-radius: 10;" text="See More " textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="15.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+   <effect>
+      <DropShadow blurType="GAUSSIAN" height="15.0" radius="7.0" width="15.0">
+         <color>
+            <Color opacity="0.4984802305698395" />
+         </color>
+      </DropShadow>
+   </effect>
+</FlowPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.back.Blog.StatisticsController">
+    <children>
+        <Label layoutX="200.0" layoutY="30.0" style="-fx-font-size: 28px;" text="Comment Statistics" />
+        <Label layoutX="70.0" layoutY="100.0" text="Total Comments:" />
+        <Label fx:id="totalCommentsLabel" layoutX="70.0" layoutY="130.0" style="-fx-font-weight: bold;" />
+        <Label layoutX="70.0" layoutY="170.0" text="Active Comments:" />
+        <Label fx:id="activeCommentsLabel" layoutX="70.0" layoutY="200.0" style="-fx-font-weight: bold;" />
+        <Label layoutX="70.0" layoutY="240.0" text="Inactive Comments:" />
+        <Label fx:id="inactiveCommentsLabel" layoutX="70.0" layoutY="270.0" style="-fx-font-weight: bold;" />
+        <PieChart fx:id="commentsPieChart" layoutX="300.0" layoutY="100.0" prefHeight="200.0" prefWidth="250.0" />
+        <Label layoutX="300.0" layoutY="300.0" style="-fx-font-weight: bold;" text="Color Legend:" />
+        <Circle fill="#9e6b05" layoutX="305.0" layoutY="334.0" radius="5.0" />
+        <Label layoutX="319.0" layoutY="325.0" style="-fx-text-fill: #9e6b05;" text="Active Comments">
+            <font>
+                <Font size="15.0" />
+            </font></Label>
+        <Circle fill="#eaa04b" layoutX="305.0" layoutY="361.0" radius="5.0" />
+        <Label layoutX="319.0" layoutY="350.0" style="-fx-text-fill: #eaa04b;" text="Inactive Comments">
+            <font>
+                <Font size="15.0" />
+            </font></Label>
+        <Button layoutX="481.0" layoutY="341.0" mnemonicParsing="false" onAction="#AfficherCommentaire" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" text="Back" />
+    </children>
+</AnchorPane>

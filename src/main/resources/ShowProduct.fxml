@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="742.0" prefWidth="1440.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ShowProduct">
+    <children>
+        <BorderPane layoutX="-7.2" prefHeight="896.0" prefWidth="1495.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-7.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <left>
+                <VBox prefHeight="896.0" prefWidth="26.0" styleClass="right-bar" stylesheets="@styles.css" BorderPane.alignment="CENTER">
+                    <children>
+                        <HBox prefHeight="110.0" prefWidth="374.0">
+                            <children>
+                                <Label alignment="CENTER" prefHeight="110.0" prefWidth="302.0" text="chosen" textFill="WHITE">
+                                    <font>
+                                        <Font name="Cambria" size="40.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="10.0" layoutY="10.0" prefHeight="110.0" prefWidth="344.0" text="Products" textFill="WHITE">
+                                    <font>
+                                        <Font name="Cambria" size="40.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="65.0" prefWidth="200.0">
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <VBox.margin>
+                                <Insets left="30.0" right="30.0" />
+                            </VBox.margin>
+                        </HBox>
+                        <VBox alignment="TOP_CENTER" prefHeight="535.0" prefWidth="293.0" styleClass="chosen" stylesheets="@styles.css">
+                            <VBox.margin>
+                                <Insets left="50.0" right="50.0" />
+                            </VBox.margin>
+                            <children>
+                                <ImageView fx:id="productImage" fitHeight="231.0" fitWidth="287.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+
+                                    </image>
+                                </ImageView>
+                                <HBox prefHeight="100.0" prefWidth="200.0" />
+                                <HBox prefHeight="58.0" prefWidth="334.0">
+                                    <children>
+                                        <Label fx:id="ProductName" prefHeight="54.0" prefWidth="182.0" text="Name" textFill="WHITE">
+                                            <font>
+                                                <Font size="24.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="ProductPrice" layoutX="10.0" layoutY="10.0" prefHeight="54.0" prefWidth="112.0" text="price" textFill="WHITE">
+                                            <font>
+                                                <Font size="24.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="54.0" prefWidth="334.0">
+                                    <children>
+                                        <Label prefHeight="54.0" prefWidth="171.0" text="category:" textFill="WHITE">
+                                            <font>
+                                                <Font size="36.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="ProductCat" layoutX="10.0" layoutY="10.0" prefHeight="54.0" prefWidth="171.0" text="catname" textFill="WHITE">
+                                            <font>
+                                                <Font size="36.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="87.0" prefWidth="334.0">
+                                    <children>
+                                        <Text fx:id="ProductDesc" fill="#e1dddd" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="332.89452362060547">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </HBox>
+                            </children>
+                            <padding>
+                                <Insets left="10.0" top="50.0" />
+                            </padding>
+                        </VBox>
+                    </children>
+                </VBox>
+            </left>
+            <center>
+                <VBox prefHeight="800.0" prefWidth="947.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                            <VBox.margin>
+                                <Insets left="20.0" right="20.0" />
+                            </VBox.margin>
+                            <children>
+                                <Label prefHeight="110.0" prefWidth="344.0" text="Our Products">
+                                    <font>
+                                        <Font name="Cambria" size="40.0" />
+                                    </font>
+                                </Label>
+                                <MenuButton fx:id="CATMB" alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" styleClass="box" stylesheets="@styles.css" text="categories" textAlignment="CENTER">
+                                    <items>
+                                    </items>
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </MenuButton>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="573.0" prefWidth="1002.0">
+                            <children>
+                                <ScrollPane fx:id="scroll" prefHeight="754.0" prefWidth="1002.0">
+                                    <AnchorPane>
+                                        <GridPane fx:id="grid" alignment="CENTER" hgap="30.0" prefHeight="11.0" prefWidth="19.0" vgap="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+
+                                        </GridPane>
+                                    </AnchorPane>
+                                </ScrollPane>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="1050.0">
+                            <children>
+                                <Pagination fx:id="pagination" pageCount="10" prefHeight="50.0" prefWidth="531.0" scaleX="1.5" scaleY="1.5" scaleZ="1.5" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

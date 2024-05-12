@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="550.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HelloController">
+   <left>
+      <Pane prefHeight="550.0" prefWidth="200.0" style="-fx-background-color: #1D231F;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutY="1.0" prefHeight="550.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="13.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/ADVENTURELOGO.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="30.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Line endX="100.0" startX="-100.0" stroke="#2a332d">
+                     <VBox.margin>
+                        <Insets bottom="50.0" />
+                     </VBox.margin>
+                  </Line>
+                  <Button fx:id="home" graphicTextGap="10.0" mnemonicParsing="false" onAction="#home" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #1D231F;" text="Acceuil" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="activities" cancelButton="true" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#activities" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #1D231F;" text="Activitées" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="shop" cancelButton="true" layoutX="10.0" layoutY="40.0" mnemonicParsing="false" onAction="#shop" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #1D231F;" text="Shop" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="blogs" cancelButton="true" layoutX="10.0" layoutY="71.0" mnemonicParsing="false" onAction="#blogs" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #1D231F;" text="Blogs" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="usersButton" cancelButton="true" layoutX="10.0" layoutY="212.0" mnemonicParsing="false" onAction="#users" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #1D231F;" text="Utilisateurs" textFill="WHITE" visible="false">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <VBox alignment="BOTTOM_LEFT" prefHeight="171.0" prefWidth="202.0">
+                     <children>
+                        <Button fx:id="frontUserBtn" cancelButton="true" mnemonicParsing="false" onAction="#user" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #1D231F;" text="My Account" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="logoutB" cancelButton="true" mnemonicParsing="false" onAction="#logout" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #1D231F;" text="LogOut" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets top="30.0" />
+               </padding>
+            </VBox>
+         </children>
+      </Pane>
+   </left>
+   <center>
+      <AnchorPane prefWidth="700.0" BorderPane.alignment="CENTER">
+         <children>
+            <StackPane fx:id="contentArea" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

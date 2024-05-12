@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="700.0" styleClass="post-background" stylesheets="@../../styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.front.Blog.DetailsController">
+    <center>
+        <Pane prefHeight="425.0" prefWidth="473.0" styleClass="post-background" stylesheets="@../../styles.css" BorderPane.alignment="CENTER">
+            <children>
+                <TextArea fx:id="AreaComment" layoutX="44.0" layoutY="342.0" prefHeight="86.0" prefWidth="303.0" promptText="Ajouter votre commentaire" />
+                <Button layoutX="356.0" layoutY="396.0" mnemonicParsing="false" onAction="#AddCommentaire" prefHeight="25.0" prefWidth="83.0" styleClass="round-layout" text="ADD" textFill="#000000ab">
+                    <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                    </font></Button>
+                <ListView fx:id="ListComment" layoutX="45.0" layoutY="438.0" prefHeight="92.0" prefWidth="303.0" />
+                <Label fx:id="titre" layoutX="21.0" layoutY="25.0" prefHeight="31.0" prefWidth="119.0" styleClass="white-background" text="titre" />
+                <Label fx:id="date" layoutX="413.0" layoutY="32.0" prefHeight="17.0" prefWidth="110.0" text="date" />
+                <Label fx:id="contenu" alignment="TOP_LEFT" layoutX="341.0" layoutY="80.0" prefHeight="156.0" prefWidth="214.0" style="-fx-background-color: #FFA500;" text="Contenu" wrapText="true" />
+                <ImageView fx:id="imageView" fitHeight="172.0" fitWidth="287.0" layoutX="32.0" layoutY="87.0" pickOnBounds="true" />
+                <!-- Add this button and label to your FXML file -->
+                <Button fx:id="likeButton" layoutX="32.0" layoutY="260.0" onAction="#likeButtonClicked" style="-fx-background-color: f8f8f8;">
+                    <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@ic_love_.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Label fx:id="likesLabel" layoutX="70.0" layoutY="264.0" prefHeight="17.0" prefWidth="21.0" text="" />
+                <Button fx:id="translateButton" layoutX="426.0" layoutY="252.0" mnemonicParsing="false" onAction="#Translate" prefHeight="25.0" prefWidth="83.0" styleClass="round-layout" text="Traduction" textFill="#000000ab">
+                    <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                    </font>
+                </Button>
+
+            </children>
+        </Pane>
+    </center>
+</BorderPane>

@@ -1,0 +1,51 @@
+.post-background{
+    -fx-background-color: #fff;
+    -fx-background-radius: 15;
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1) , 5.0, 0.0, 0.0, 5.0);
+}
+
+.reactions-container{
+     -fx-background-color: #fff;
+     -fx-background-radius: 50;
+     -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1) , 5.0, 0.0, 0.0, 5.0);
+     -fx-border-width: 1;
+     -fx-border-color:#B8B9BB;
+     -fx-border-radius: 50;
+}
+
+.top-border{
+    -fx-border-width: 1 0 0 0;
+    -fx-border-color: #606266;
+}
+
+.right-bar{
+    -fx-background-color: #335343;
+}
+
+.shadow{
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1),10.0,0.0,0.0,10.0);
+}
+
+.chosen{
+    -fx-background-color: #77dd77;
+    -fx-background-radius: 30;
+}
+
+.item{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 30;
+}
+
+.box{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 100;
+}
+
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+.btn{
+    -fx-background-color:#98fb98;
+    -fx-background-radius: 30;
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxWidth="674.0" prefHeight="58.0" prefWidth="659.0" spacing="10.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CommentCard">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="28.0" prefWidth="659.0" spacing="10.0">
+         <children>
+            <StackPane>
+               <children>
+                  <Circle fill="#2f5c3e" radius="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <Text fx:id="commentIcon" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="OM" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <Text fx:id="name" strokeType="OUTSIDE" strokeWidth="0.0" text="name">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <HBox alignment="CENTER_RIGHT" prefHeight="28.0" prefWidth="572.0">
+               <children>
+                  <Text fx:id="date" strokeType="OUTSIDE" strokeWidth="0.0" text="date" textAlignment="RIGHT">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <Text fx:id="comment" strokeType="OUTSIDE" strokeWidth="0.0" text="commentaire" wrappingWidth="659.5999755859375">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+   </children>
+</VBox>

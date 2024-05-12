@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fx:id="mainPane" hbarPolicy="NEVER" vbarPolicy="NEVER" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ActivitiesDashboard">
+   <content>
+      <AnchorPane prefHeight="600.0" prefWidth="700.0">
+         <children>
+            <VBox alignment="TOP_CENTER" fillWidth="false" prefHeight="200.0" prefWidth="702.0" spacing="10.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="623.0" spacing="7.0">
+                     <children>
+                        <Pane prefHeight="200.0" prefWidth="506.0" style="-fx-background-color: ededed; -fx-background-radius: 10;">
+                           <children>
+                              <BarChart fx:id="activitiesChart" prefHeight="200.0" prefWidth="266.0" stylesheets="@styleActivities.css">
+                                <xAxis>
+                                  <CategoryAxis label="Activity id" prefWidth="175.0" side="BOTTOM" />
+                                </xAxis>
+                                <yAxis>
+                                  <NumberAxis label="Reservations" prefHeight="146.0" prefWidth="62.0" side="LEFT" />
+                                </yAxis>
+                              </BarChart>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Pane>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITESMOKE" height="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="visibility: false;" />
+                        <VBox prefHeight="150.0" prefWidth="493.0" spacing="10.0">
+                           <children>
+                              <Pane style="-fx-background-color: #2F5C3E; -fx-background-radius: 10;">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" layoutX="27.0" layoutY="-3.0" prefHeight="100.0" prefWidth="223.0">
+                                       <children>
+                                          <Label prefHeight="79.0" prefWidth="173.0" text="All The Activities" textFill="WHITE" wrapText="true">
+                                             <font>
+                                                <Font name="System Bold" size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="activitiesCount" alignment="CENTER" layoutX="10.0" layoutY="20.0" prefHeight="79.0" prefWidth="114.0" text="5" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                                             <font>
+                                                <Font name="System Bold" size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </Pane>
+                              <Pane style="-fx-background-color: #1D231F; -fx-background-radius: 10;">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" layoutX="27.0" layoutY="-2.0" prefHeight="100.0" prefWidth="223.0">
+                                       <children>
+                                          <Label prefHeight="79.0" prefWidth="154.0" text="OverAll Rating" textFill="WHITE" wrapText="true">
+                                             <font>
+                                                <Font name="System Bold" size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="rating" alignment="CENTER" layoutX="10.0" layoutY="20.0" prefHeight="79.0" prefWidth="114.0" text="3.5" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                                             <font>
+                                                <Font name="System Bold" size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <SplitPane style="-fx-background-color: ededed; -fx-background-radius: 10;">
+                     <items>
+                        <VBox>
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="573.0" spacing="70.0">
+                                 <children>
+                                    <Label text="Name">
+                                       <opaqueInsets>
+                                          <Insets left="20.0" />
+                                       </opaqueInsets>
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="244.0" layoutY="19.0" text="Type">
+                                       <opaqueInsets>
+                                          <Insets left="20.0" />
+                                       </opaqueInsets>
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="42.0" layoutY="19.0" text="Location">
+                                       <opaqueInsets>
+                                          <Insets left="20.0" />
+                                       </opaqueInsets>
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="200.0" layoutY="19.0" text="Duration">
+                                       <opaqueInsets>
+                                          <Insets left="20.0" />
+                                       </opaqueInsets>
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="352.0" layoutY="19.0" text="Actions">
+                                       <opaqueInsets>
+                                          <Insets left="20.0" />
+                                       </opaqueInsets>
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets left="20.0" right="20.0" />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets left="20.0" right="20.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets left="50.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <ScrollPane hbarPolicy="NEVER" maxHeight="200.0" minViewportHeight="200.0" snapToPixel="false" style="-fx-background-color: ededed;" vbarPolicy="NEVER">
+                                 <content>
+                                    <VBox fx:id="activitiesVbox" maxHeight="600.0" maxWidth="-Infinity" prefHeight="460.0" prefWidth="591.0" />
+                                 </content>
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                              </ScrollPane>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                     </items>
+                  </SplitPane>
+                  <SplitPane style="-fx-background-color: ededed; -fx-background-radius: 10;">
+                     <items>
+                        <VBox prefHeight="251.0" prefWidth="622.0" spacing="20.0" stylesheets="@styleActivities.css">
+                           <children>
+                              <Label text="Add New Activity">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="15.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <HBox alignment="TOP_CENTER" prefHeight="178.0" prefWidth="586.0" spacing="50.0">
+                                 <children>
+                                    <VBox prefHeight="182.0" prefWidth="225.0" spacing="7.0">
+                                       <children>
+                                          <TextField fx:id="nameField" promptText="Name .." styleClass="text-field" stylesheets="@styleActivities.css" />
+                                          <TextField fx:id="locationn" promptText="Location .." stylesheets="@styleActivities.css" />
+                                          <TextField fx:id="type" promptText="Type .." />
+                                          <TextArea fx:id="desc" prefHeight="66.0" prefWidth="146.0" promptText="Description .." styleClass="text-field" />
+                                          <TextField fx:id="maxGuests" promptText="MaxGuests .." />
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="206.0" prefWidth="225.0" spacing="7.0">
+                                       <children>
+                                          <TextField fx:id="minAge" promptText="MinAge .." />
+                                          <TextField fx:id="price" promptText="Price .." />
+                                          <TextField fx:id="duration" promptText="Duration .." />
+                                          <Button fx:id="chooseImage" mnemonicParsing="false" onAction="#chooseImage" prefHeight="30.0" prefWidth="119.0" text="choose image">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Button>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <Button alignment="CENTER" contentDisplay="CENTER" onAction="#addActivity" prefHeight="26.0" prefWidth="502.0" stylesheets="@styleActivities.css" text="Add Activity">
+                                 <VBox.margin>
+                                    <Insets left="60.0" />
+                                 </VBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </items>
+                     <padding>
+                        <Insets bottom="20.0" top="20.0" />
+                     </padding>
+                  </SplitPane>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

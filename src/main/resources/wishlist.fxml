@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="mainPane" prefHeight="550.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Wishlist">
+    <children>
+        <ScrollPane hbarPolicy="NEVER" prefHeight="550.0" prefWidth="700.0" vbarPolicy="NEVER">
+            <content>
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                    <children>
+                        <StackPane prefHeight="150.0" prefWidth="200.0">
+                            <children>
+                                <ImageView fitHeight="200.0" fitWidth="700.0" pickOnBounds="true">
+                                    <image>
+                                        <Image url="@assets/bg.png" />
+                                    </image>
+                                </ImageView>
+                                <Rectangle arcHeight="5.0" arcWidth="5.0" height="200.0" opacity="0.5" stroke="#ff050500" strokeType="INSIDE" strokeWidth="0.0" width="700.0" />
+                                <Label text="       Fav activités &#10;reservez votre place !" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="30.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </StackPane>
+                  <Label fx:id="noActivities" alignment="CENTER" contentDisplay="CENTER" text="no activities in your wishlist&#10;" textFill="#4e4e4e" visible="false">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                        <GridPane fx:id="activitiesGrid" alignment="CENTER_LEFT">
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <VBox.margin>
+                                <Insets left="15.0" right="15.0" top="5.0" />
+                            </VBox.margin>
+                     <columnConstraints>
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                     </columnConstraints>
+                        </GridPane>
+                    </children>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </children>
+</Pane>

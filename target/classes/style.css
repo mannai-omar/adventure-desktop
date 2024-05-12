@@ -1,0 +1,112 @@
+/* style.css */
+
+/* AnchorPane */
+.root {
+    -fx-background-color: #f9f9f9; /* Light gray background */
+}
+
+/* Logo */
+.logo {
+    -fx-padding: 10px; /* Add padding around the logo */
+}
+
+/* Navigation Bar */
+.nav-bar {
+    -fx-background-color: #333; /* Dark gray background */
+}
+
+.nav-button {
+    -fx-text-fill: white; /* White text color */
+    -fx-padding: 10px 20px; /* Add padding to buttons */
+    -fx-font-size: 14px; /* Set font size */
+    -fx-cursor: hand; /* Show hand cursor on hover */
+}
+/* Set background color to white */
+.Table-view {
+    -fx-background-color: white;
+}
+
+/* Set alternating row colors */
+.Table-row-cell:odd {
+    -fx-background-color: #f0f8ff; /* Light blue */
+}
+
+/* Set background color and text color for selected rows */
+.Table-row-cell:selected {
+    -fx-background-color: #6495ED; /* Dark blue */
+}
+
+/* Set header background color and text color */
+.Table-view .column-header-background {
+    -fx-background-color: #6495ED; /* Dark blue */
+}
+
+.Table-view .column-header {
+    -fx-text-fill: white; /* White text */
+}
+
+
+
+.nav-button:hover {
+    -fx-background-color: #555; /* Darken background color on hover */
+}
+
+/* Text */
+.heading {
+    -fx-font-size: 24px; /* Larger font size */
+    -fx-fill: #444; /* Dark gray text color */
+}
+
+.label {
+    -fx-font-family: "Roboto";
+    -fx-font-size: 16px;
+}
+
+
+.label-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+    -fx-padding: 5px 10px;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+.label-button:hover {
+    -fx-background-color: transparent;
+}
+.text-field {
+    -fx-font-family: "Roboto";
+    -fx-font-size: 16px;
+}
+
+
+.sidebar{
+    -fx-background-color: #2262C6;
+    -fx-background-radius: 0px 50px 0px 0px;
+}
+.labbtn {
+    -fx-text-fill: #FEFFFD; /* White text */
+    -fx-background-color: #1A5276; /* Blue background */
+    -fx-background-radius: 50px;
+    -fx-font-family: "Roboto";
+    -fx-font-size: 16px;
+}
+.labbtn:hover {
+    -fx-background-color: #0047AB; /* Darker blue background on hover */
+}
+.sidebar-btn{
+    -fx-background-color: transparent;
+}
+.sidebar-btn-text{
+    -fx-text-fill: #A2BEE8;
+}
+.sidebar-btn:hover .sidebar-btn-text{
+    -fx-text-fill: #7AA2E7;
+}
+
+
+
+
+
